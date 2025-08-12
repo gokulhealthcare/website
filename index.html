@@ -7,6 +7,9 @@
   <meta property="og:title" content="Gokul Healthcare™">
   <meta property="og:description" content="Comprehensive healthcare – pharmacy & clinic under one roof.">
   <meta property="og:image" content="assets/thumbnail.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:url" content="https://gokulhealthcare.github.io/website">
   <meta name="twitter:card" content="summary_large_image">
   <title>Gokul Healthcare™</title>
@@ -47,12 +50,23 @@
       color: white;
       padding: 0 0.5rem;
     }
+    .navbar-brand img {
+      height: 30px;
+      margin-right: 8px;
+    }
+    .hero img {
+      max-width: 150px;
+      margin-bottom: 1rem;
+    }
   </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Gokul Healthcare™</a>
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/favicon.png" alt="Gokul Healthcare Logo">
+        Gokul Healthcare™
+      </a>
       <div class="d-flex align-items-center order-lg-2">
         <button id="darkModeToggle" title="Toggle Dark Mode">🌙</button>
         <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -71,6 +85,7 @@
 
   <header class="hero">
     <div class="container">
+      <img src="assets/thumbnail.png" alt="Gokul Healthcare Full Logo">
       <h1>Your Health, Our Priority</h1>
       <p>Providing trusted medical care and medicines under one roof.</p>
       <a href="#contact" class="btn btn-light btn-lg">Book an Appointment</a>
